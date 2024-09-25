@@ -1,7 +1,8 @@
-const env = require('dotenv');
-env.config({path: '../env/.env'});
+const express = require("express");
+const env = require('dotenv').config({path: "../.env"});
+const API_KEY = process.env.API_KEY;
 
-console.log('process.env.API_KEY', process.env.API_KEY);
+console.log('API_KEY', API_KEY);
 
 function onGeoOk(position) {
     const lat = position.coords.latitude;
