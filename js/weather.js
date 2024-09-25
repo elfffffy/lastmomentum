@@ -1,4 +1,4 @@
-import config from "./apikey.js";
+import config from "../apikey.js";
 const API_KEY = config.apikey;
 
 function onGeoOk(position) {
