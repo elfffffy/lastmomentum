@@ -20,8 +20,7 @@ function onGeoOk(position) {
             icon.appendChild(iconImg);
         })
 
-    });
-}
+    };
 
 function onGeoError() {
     alert("If you want to get weather information, please accept the location information.");
