@@ -6,7 +6,8 @@ function onGeoOk(position) {
         const apiKey = weather.apiKey;
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
-        fetch(apiUrl).then(response => response.json()).then(data => {
+        return fetch(apiUrl);
+    }).then(response => response.json()).then(data => {
             const city = document.querySelector('.city');
             const weather = document.querySelector('.temp');
             const icon = document.querySelector('.icon');
