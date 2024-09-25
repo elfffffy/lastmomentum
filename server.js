@@ -4,9 +4,8 @@ const express = require('express');
 const app = express();
 
 const apiKey = process.env.API_KEY;
-console.log(apiKey);
 
-app.get('/config', (req, res) => {
+app.get('/weather', (req, res) => {
   res.json({ apiKey });
 });
 
