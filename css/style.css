@@ -317,7 +317,7 @@ iframe {
     align-items: center;
     gap: 40px;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s;
     z-index: -999;
 }
 
@@ -348,7 +348,7 @@ body::before {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s;
     z-index: -999;
 }
 
